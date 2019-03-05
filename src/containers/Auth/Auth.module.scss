@@ -1,0 +1,36 @@
+.Auth{
+    text-align: center;
+    padding: 10px 15px;
+    &__form{
+        border: 1px solid #eee;
+        box-shadow: 0 2px 3px #ccc;
+        max-width: 800px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__showFakeInfo{
+        border: 1px solid orangered;
+        color: orangered;
+        width: 40%;
+        margin: 0 auto;
+        padding: 10px;
+        font-weight: bold;
+        box-shadow: 0 2px 3px #eee;
+        cursor: pointer;
+        transition: all .2s;
+        &:hover{
+            box-shadow: 0 4px 3px #ccc;
+        }
+    }
+    &__fakeInfo{
+        background: #eee;
+        max-height: 0;
+        overflow: hidden;
+        transform: scaleY(0);
+        transition: all .2s;
+        &__expand{
+            max-height: 100%;
+            transform: scaleY(1);
+        }              
+    }        
+}
